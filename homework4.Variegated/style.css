@@ -1,0 +1,348 @@
+.homepage {
+    width: 100%;
+    margin: auto;
+    /* padding-top: 20px; */
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+a {
+    color: rgba(19, 20, 52, 0.728);
+}
+
+
+/* img {
+    width: 100%;
+} */
+
+
+/* ===========header============= */
+
+.header-shop-customer-information {
+    border-bottom: 1px solid rgba(205, 205, 205, 0.317);
+}
+
+.header-shop-customer-information .shop-information {
+    display: flex;
+    /* text-align: center;
+    vertical-align: middle; */
+    height: 50px;
+}
+
+.shop-information-item {
+    margin: auto;
+    /* line-height: 60px; */
+    /* height: 60px; */
+    /* height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.shop-information .telephone-number {
+    padding: 0 10px 0 40px;
+}
+
+.shop-information .business-hours {
+    padding-left: 10px;
+}
+
+.shop-information .telephone-number-border {
+    border-right: 1px solid rgb(204, 204, 204);
+    height: 17px;
+    width: 1px;
+}
+
+.customer-information-box {
+    width: 100px;
+    height: 50px;
+    border-right: 1px solid rgba(205, 205, 205, 0.317);
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.customer-information-box:nth-child(4) {
+    width: 200px;
+}
+
+.header-shop-customer-information .customer-information {
+    display: flex;
+    /* height: 0px; */
+    margin: 0 30px 0 0;
+}
+
+.header-shop-customer-information .customer-information .customer-search {
+    display: flex;
+}
+
+.customer-search input[type="search"] {
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+.customer-information-box .fa-solid {
+    font-size: 18px;
+}
+
+.header-shop-customer-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    /* flex-wrap: wrap; */
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-content .header-nav-content-ul {
+    display: flex;
+}
+
+.header-nav-content .header-nav-content-li {
+    padding: 0 30px 0;
+    font-weight: 900;
+}
+
+.header-nav-social-media {
+    display: flex;
+}
+
+.header-nav-social-media li a {
+    color: rgba(19, 20, 52, 0.381);
+    display: inline-block;
+    padding: 0 10px 0;
+}
+
+.header-nav .header-nav-logo {
+    padding: 0 40px 0;
+}
+
+
+/* .header-nav-logo img {
+    width: 100%;
+} */
+
+
+/*============== discount ================*/
+
+.discount {
+    background: -webkit-linear-gradient( 90deg, rgb(252, 251, 254), rgb(245, 245, 245));
+    background: linear-gradient(90deg, rgb(252, 251, 254), rgb(245, 245, 245));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dicount-width {
+    width: 80%;
+    margin: auto;
+    /* background-color: rgb(245, 245, 245); */
+}
+
+.discount-carousel-pic {
+    /* margin: auto; */
+    /* width: 100%; */
+    text-align: center;
+    /* background-color: rgb(245, 245, 245); */
+}
+
+.discount-carousel-pic img {
+    width: 100%;
+}
+
+.discount-group {
+    margin: 30px 0 30px 0;
+}
+
+
+/* .discount-carousel img {
+    background-color: #fcfbfe;
+    margin: 0 20px 0;
+    margin: auto;
+} */
+
+.discount-carousel {
+    position: relative;
+    margin: auto;
+    /* background-color: #fcfbfe; */
+}
+
+.discount-carousel-text {
+    position: absolute;
+    top: 23%;
+    left: 7%;
+}
+
+.discount-group-ul {
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* margin: auto; */
+    /* margin: 0 30px; */
+    /* width: 70%; */
+}
+
+.discount-group-li {
+    width: 32.5%;
+    line-height: 1.5;
+    padding: 7px 0;
+    text-align: center;
+    vertical-align: middle;
+    /* margin: 30px; */
+}
+
+.discount-group-ul li:nth-child(1) {
+    margin-right: 10px;
+}
+
+.discount-group-ul li:nth-child(2) {
+    margin-right: 10px;
+}
+
+.discount-carousel-text-discount {
+    background-color: black;
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.discount-carousel-text-title {
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.2;
+    padding: 20px 0;
+}
+
+.discount-carousel-text-brorder {
+    width: 45px;
+    border-bottom: 3px solid #000;
+    margin-bottom: 30px;
+}
+
+.discount-carousel-text-content {
+    padding: 20px 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(92, 92, 92);
+}
+
+.discount-carousel-text-more {
+    color: #000;
+    font-weight: 900;
+}
+
+.discount-group-li .title {
+    font-weight: 800;
+}
+
+.discount-group-li .content {
+    color: rgb(125, 124, 124);
+}
+
+.discount-group-ul .discount-group-li:nth-child(1) {
+    background-color: rgb(255, 229, 229);
+}
+
+.discount-group-ul .discount-group-li:nth-child(2) {
+    background-color: #ffece5;
+}
+
+.discount-group-ul .discount-group-li:nth-child(3) {
+    background-color: #fff5e5;
+}
+
+
+/*============== shop-categories ================*/
+
+.shop-categories-width {
+    width: 80%;
+    margin: auto;
+}
+
+.shop-categories {
+    position: relative;
+    /* text-align: center; */
+}
+
+.shop-categories-title {
+    padding: 70px 0 40px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.shop-categories-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-categories-group li:nth-child(1) {
+    margin-right: 15px;
+}
+
+.shop-categories-group li:nth-child(2) {
+    margin-right: 15px;
+}
+
+.shop-categories-group li:nth-child(3) {
+    margin-right: 15px;
+}
+
+.shop-categories-group-item img {
+    /* margin: 0 15px; */
+    width: 100%;
+}
+
+.shop-categories-group-item .title {
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shop-categories-group-item .border {
+    display: inline-block;
+    border-bottom: 1.5px solid #000;
+    width: 28px;
+    margin: auto;
+    vertical-align: middle;
+    margin: 0 7px 0 20px;
+}
+
+.shop-categories .bgc {
+    width: 100%;
+    height: 70%;
+    background-color: #ffece5;
+    position: absolute;
+    top: 45%;
+    z-index: -1;
+}
+
+
+/*============== favorite blouses ================*/
+
+
+/*============== accessories ================*/
+
+
+/*============== popular-models ================*/
+
+
+/*============== modern-casual-essentials ================*/
+
+
+/*============== blog ================*/
+
+
+/*============== latest-news ================*/
+
+
+/*============== instagram ================*/
+
+
+/*============== footer ================*/
