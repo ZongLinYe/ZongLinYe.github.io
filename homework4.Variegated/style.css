@@ -564,6 +564,10 @@ a {
 
 /*============== blog ================*/
 
+.blog-area {
+    margin-bottom: 60px;
+}
+
 .blog-area-width {
     width: 90%;
     text-align: center;
@@ -629,8 +633,110 @@ a {
 
 /*============== latest-news ================*/
 
+.latest-news-area {
+    /* display: inline-block; */
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 60px;
+}
+
+.latest-news-area-width {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: #ffece5;
+    padding: 35px 0;
+}
+
+.latest-news-area .latest-news-title,
+.latest-news-area .latest-news-input-email {
+    width: 50%;
+}
+
+.latest-news-title {
+    font-size: 20 px;
+    padding: 20px 30px;
+    font-weight: 900;
+    color: #232222;
+}
+
+.latest-news-input-email [type="email"] {
+    width: 400px;
+    border: none;
+    outline: none;
+    padding: 20px 20px;
+}
+
+.latest-news-input-email .subscribe-btn {
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    padding: 20px 30px;
+    font-weight: 900;
+    display: inline-block;
+}
+
+.latest-news-input-email {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding: 20px 0px; */
+}
+
 
 /*============== instagram ================*/
 
+.join-us-instagram-link {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 
 /*============== footer ================*/
+
+.web-map,
+.web-map a {
+    background-color: black;
+    color: white;
+}
+
+.web-map {
+    padding: 100px 80px 0;
+}
+
+.web-map-group {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.web-map-group>li {
+    width: 25%;
+}
+
+.web-map-group-item .title {
+    padding-bottom: 30px;
+    font-weight: 900;
+}
+
+.web-map-group-item .item {
+    padding-bottom: 20px;
+}
+
+.web-map-group-item .item:last-child {
+    line-height: 2.5;
+}
+
+.web-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social-media {
+    display: flex;
+}
+
+.footer-social-media .fa-brands {
+    padding-right: 20px;
+}
