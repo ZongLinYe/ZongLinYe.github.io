@@ -1,0 +1,400 @@
+.toyota {
+  margin: auto;
+  font-size: 36px;
+}
+
+.toyota-tnga-title {
+  color: white;
+
+  .theme {
+    display: flex;
+    background-color: #bb0404;
+    align-items: center;
+
+    .theme-number {
+      display: flex;
+      writing-mode: vertical-lr;
+      margin-left: -0.4em;
+      // position: relative;
+      // left: -18px;
+      .theme-number-item {
+        font-size: 2.8em;
+      }
+    }
+    .theme-slogan {
+      flex-grow: 1;
+      // display: inline-block;
+      // vertical-align: middle;
+      font-size: 1.5em;
+    }
+  }
+  .text-group {
+    background-color: black;
+    padding: 15px 30px;
+    .subtheme {
+      padding: 10px 0;
+      font-size: 0.8em;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 0.5em;
+      line-height: 1.7;
+    }
+  }
+}
+
+.toyota-tnga-pic {
+  display: block;
+  position: relative;
+  .toyota-tnga-pic-car {
+    width: 100%;
+    // opacity: 0.1;
+    display: block;
+  }
+  .toyota-tnga-pic-youtube-icon {
+    // display: block;
+
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    // z-index: 1;
+  }
+}
+
+.toyota-tnga-text {
+  padding: 20px;
+  background-color: #eeeeee;
+  .toyota-tnga-text-title {
+    color: #bb0404;
+    font-size: 0.75em;
+    display: flex;
+    margin-bottom: 0.5em;
+
+    &::after {
+      content: "";
+      background-color: #bb0404;
+      flex-grow: 1;
+      // width: 100%;
+      height: 2px;
+      // vertical-align: middle;
+      margin: auto;
+    }
+  }
+}
+
+.toyota-tnga-text-container {
+  li {
+    .design-focus {
+      background-color: black;
+      color: white;
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 0.7em;
+      margin-bottom: 0.5em;
+    }
+    .design-focus-text {
+      margin: 0 0 15px 30px;
+      // display: list-item;
+      // list-style: disc outside;
+      font-size: 0.4em;
+
+      color: #525252;
+      line-height: 1.5;
+      &::before {
+        content: "\2022";
+        color: #bb0404;
+        display: inline-block;
+        font-weight: bold;
+        width: 1em;
+        margin-left: -1.3em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --background-area: 60%;
+  }
+
+  .toyota {
+    max-width: 768px;
+    font-size: 20px;
+    width: 80%;
+    padding: 100px 0;
+
+    & > .toyota-tnga:nth-of-type(1) {
+      // width: 100%;
+      .toyota-tnga-title {
+        width: 240px;
+        position: relative;
+        right: 10px;
+        z-index: 3;
+
+        .text-group {
+          padding: 5px 10px;
+          .subtheme {
+            padding: 5px 0;
+          }
+        }
+      }
+      .toyota-tnga-pic {
+        width: 500px;
+        position: relative;
+        right: -100px;
+        top: -118px;
+        .toyota-tnga-pic-youtube-icon {
+          left: unset;
+          right: -15px;
+          z-index: 5;
+        }
+
+        &::after {
+          position: absolute;
+          top: -40px;
+          right: -35px;
+          content: "";
+          width: var(--background-area);
+          height: calc(var(--background-area) * 1.2);
+          background-color: #d0d0d0;
+          z-index: -1;
+        }
+      }
+      .toyota-tnga-text {
+        width: 400px;
+        position: relative;
+        top: -137px;
+        right: 0px;
+        margin: unset;
+        padding: 10px;
+
+        .design-focus {
+          padding: 5px 10px;
+        }
+        .design-focus-text {
+          margin: 0 0 7px 14px;
+        }
+      }
+    }
+
+    & > .toyota-tnga:nth-of-type(2) {
+      // width: 100%;
+
+      .toyota-tnga-title {
+        width: 240px;
+        position: relative;
+        right: -370px;
+        z-index: 3;
+
+        .text-group {
+          padding: 5px 10px;
+          .subtheme {
+            padding: 5px 0;
+          }
+        }
+      }
+      .toyota-tnga-pic {
+        width: 500px;
+        position: relative;
+        right: -40px;
+        top: -97px;
+        .toyota-tnga-pic-youtube-icon {
+          right: unset;
+          left: -15px;
+          z-index: 5;
+        }
+
+        &::after {
+          position: absolute;
+          top: -40px;
+          right: -35px;
+          content: "";
+          width: var(--background-area);
+          height: calc(var(--background-area) * 1.2);
+          background-color: #d0d0d0;
+          z-index: -1;
+        }
+      }
+      .toyota-tnga-text {
+        width: 400px;
+        position: relative;
+        top: -115px;
+        right: 0px;
+        margin: unset;
+        padding: 10px;
+
+        .design-focus {
+          padding: 5px 10px;
+        }
+        .design-focus-text {
+          margin: 0 0 7px 14px;
+        }
+      }
+    }
+
+    & > .toyota-tnga:nth-of-type(3) {
+      // width: 100%;
+      .toyota-tnga-title {
+        width: 240px;
+        position: relative;
+        right: 10px;
+        z-index: 3;
+
+        .text-group {
+          padding: 5px 10px;
+          .subtheme {
+            padding: 5px 0;
+          }
+        }
+      }
+      .toyota-tnga-pic {
+        width: 500px;
+        position: relative;
+        right: -100px;
+        top: -138px;
+        .toyota-tnga-pic-youtube-icon {
+          left: unset;
+          right: -15px;
+          z-index: 5;
+        }
+
+        &::after {
+          position: absolute;
+          top: -40px;
+          right: -35px;
+          content: "";
+          width: var(--background-area);
+          height: calc(var(--background-area) * 1.2);
+          background-color: #d0d0d0;
+          z-index: -1;
+        }
+      }
+      .toyota-tnga-text {
+        width: 400px;
+        position: relative;
+        top: -158px;
+        right: 0px;
+        margin: unset;
+        padding: 10px;
+
+        .design-focus {
+          padding: 5px 10px;
+        }
+        .design-focus-text {
+          margin: 0 0 7px 14px;
+        }
+      }
+    }
+
+    & > .toyota-tnga:nth-of-type(4) {
+      // width: 100%;
+      .toyota-tnga-title {
+        width: 240px;
+        position: relative;
+        right: -370px;
+        z-index: 3;
+
+        .text-group {
+          padding: 5px 10px;
+          .subtheme {
+            padding: 5px 0;
+          }
+        }
+      }
+      .toyota-tnga-pic {
+        width: 500px;
+        position: relative;
+        right: -40px;
+        top: -138px;
+        .toyota-tnga-pic-youtube-icon {
+          right: unset;
+          left: -15px;
+          z-index: 5;
+        }
+
+        &::after {
+          position: absolute;
+          top: -40px;
+          right: -35px;
+          content: "";
+          width: var(--background-area);
+          height: calc(var(--background-area) * 1.2);
+          background-color: #d0d0d0;
+          z-index: -1;
+        }
+      }
+      .toyota-tnga-text {
+        width: 400px;
+        position: relative;
+        top: -155px;
+        right: 0px;
+        margin: unset;
+        padding: 10px;
+
+        .design-focus {
+          padding: 5px 10px;
+        }
+        .design-focus-text {
+          margin: 0 0 7px 14px;
+        }
+      }
+    }
+    & > .toyota-tnga:nth-of-type(5) {
+      // width: 100%;
+      .toyota-tnga-title {
+        width: 240px;
+        position: relative;
+        right: 10px;
+        z-index: 3;
+
+        .text-group {
+          padding: 5px 10px;
+          .subtheme {
+            padding: 5px 0;
+          }
+        }
+      }
+      .toyota-tnga-pic {
+        width: 500px;
+        position: relative;
+        right: -100px;
+        top: -118px;
+        .toyota-tnga-pic-youtube-icon {
+          left: unset;
+          right: -15px;
+          z-index: 5;
+        }
+
+        &::after {
+          position: absolute;
+          top: -40px;
+          right: -35px;
+          content: "";
+          width: var(--background-area);
+          height: calc(var(--background-area) * 1.2);
+          background-color: #d0d0d0;
+          z-index: -1;
+        }
+      }
+      .toyota-tnga-text {
+        width: 400px;
+        position: relative;
+        top: -137px;
+        right: 0px;
+        margin: unset;
+        padding: 10px;
+
+        .design-focus {
+          padding: 5px 10px;
+        }
+        .design-focus-text {
+          margin: 0 0 7px 14px;
+        }
+      }
+    }
+  }
+}
