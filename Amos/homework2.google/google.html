@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(56, 56, 56);
+      }
+
+      .google-web-site {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        height: 100%;
+        /* border: 1px solid rgb(199, 149, 255); */
+      }
+
+      .logo-area {
+        /* width: 500px; */
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid rgb(77, 42, 250); */
+        margin-top: 100px;
+        margin-bottom: 30px;
+      }
+
+      .logo-area img {
+        /* border: 1px solid rgb(2, 162, 184); */
+        width: 272px;
+      }
+
+      .hyperlink-area {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid rgb(255, 107, 255); */
+      }
+
+      .items-group {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid rgb(255, 215, 156); */
+      }
+
+      .hyperlink-area img {
+        width: 24px;
+        /* border: 1px solid rgb(186, 255, 134); */
+        background-size: cover;
+      }
+
+      .hyperlink-area .item-pic1 img {
+        position: relative;
+        top: 17px;
+      }
+
+      .hyperlink-area .item-pic2 img {
+        position: relative;
+        top: 17px;
+      }
+
+      .item-title p {
+        color: white;
+        font-size: 8px;
+        text-align: center;
+        /* border: 1px solid #fff; */
+      }
+
+      .hyperlink-area-items-group {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid rgb(255, 91, 91); */
+      }
+
+      .hyperlink-area-items-group-item {
+        /* border: 1px solid rgb(92, 225, 194); */
+        margin: 10px;
+        padding: 0 0 10px 0;
+        cursor: pointer;
+      }
+
+      .hyperlink-area-items-group-item:hover {
+        border-radius: 5px;
+        background-color: rgb(142, 142, 142);
+      }
+
+      .item-pic {
+        display: flex;
+        justify-content: center;
+        /* margin: 25px; */
+        margin: 5px 14px 10px 14px;
+        /* border: 1px solid rgb(224, 228, 135); */
+      }
+
+      .hyperlink-area .item {
+        position: relative;
+      }
+
+      .hyperlink-area .item-pic2 img {
+        width: 15px;
+        height: 15px;
+      }
+      /* .hyperlink-area .item-pic::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 12.5px;
+            top: 8px;
+            background-color: rgb(89, 89, 89);
+            z-index: -1;
+            border-radius: 50%;
+        } */
+      /* .search-area-search-form::before {
+            position: relative;
+            left: 14px;
+            top: 0.5px;
+            border-radius: 50%;
+            content: "";
+            height: 27px;
+            width: 27px;
+            background-color: #fff;
+            background-image: url(./pic/magnifying_glass_icon.png);
+            z-index: -1;
+        }
+        
+        .search-area-search-form::after {
+            border-radius: 50%;
+            position: relative;
+            .search-area   content: "";
+            height: 27px;
+            width: 27px;
+            background-color: #fff;
+            z-index: -1;
+            right: 14px;
+            top: 0.5px;
+        } */
+      /* .search-area-search-form-backgroud {
+            position: relative;
+            left: 200px;
+            height: 27px;
+            width: 400px;
+            background-color: #fff;
+            z-index: -1;
+        } */
+      /* .hyperlink-area p {
+            display: block;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+         */
+
+      .search-area input {
+        width: 390px;
+        height: 35px;
+        background-color: #fff;
+        outline: none;
+        padding: 0 30px 0 30px;
+        border-radius: 20px;
+      }
+
+      .search-area img {
+        height: 10px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0px;
+        margin: auto;
+        background-color: #fff;
+      }
+
+      .search-area-search-form-pic1 {
+        left: 15px;
+      }
+
+      .search-area-search-form-pic2 {
+        right: 25px;
+        cursor: pointer;
+      }
+
+      .search-area .search-area-search-form-pic1 {
+        /* height: 28px; */
+        position: relative;
+      }
+
+      .search-area .search-area-search-form-pic2 {
+        /* height: 28px; */
+        position: relative;
+      }
+
+      .hyperlink-area-items-group-item-item-pic {
+        height: 50px;
+        width: 50px;
+        /* margin: auto; */
+        border-radius: 50%;
+        background-color: rgb(89, 89, 89);
+        /* text-align: center; */
+      }
+
+      .hyperlink-area-items-group {
+        margin: 10px 0 0 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="google-web-site">
+      <div class="logo-area">
+        <img src="./pic/$RVFBJRP.png" alt="google" />
+      </div>
+      <div class="search-area">
+        <div class="search-area-search-form items-group">
+          <div class="search-area-search-form-pic1">
+            <img src="./pic/magnifying_glass_icon.png" alt="search" />
+          </div>
+          <div class="search-area-search-form-backgroud"></div>
+          <form action="">
+            <label for=""
+              ><input type="search" placeholder="搜尋 Google 或輸入網址"
+            /></label>
+          </form>
+          <div class="search-area-search-form-pic2">
+            <img src="./pic/google_mic_0.png" alt="mic" />
+          </div>
+        </div>
+      </div>
+      <div class="hyperlink-area">
+        <div class="hyperlink-area-items-group items-group">
+          <div class="hyperlink-area-items-group-item item">
+            <div
+              class="hyperlink-area-items-group-item-item-pic item-pic item-pic1"
+            >
+              <a href="#"><img src="./pic/youtube2.png" alt="youtube" /></a>
+            </div>
+            <div class="hyperlink-area-items-group-item-item-title item-title">
+              <p>youtube</p>
+            </div>
+          </div>
+
+          <div class="hyperlink-area-items-group-item item">
+            <div
+              class="hyperlink-area-items-group-item-item-pic item-pic item-pic2"
+            >
+              <img src="./pic/add_icon2.png" alt="add" />
+            </div>
+            <div class="hyperlink-area-items-group-item-item-title item-title">
+              <p>新增捷徑</p>
+              <a href="#" title="vup " aria-label="vau"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

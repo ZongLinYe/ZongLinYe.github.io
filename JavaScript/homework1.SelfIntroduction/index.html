@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .self-introdution {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .self-pic {
+            width: 30%;
+            margin: auto;
+        }
+
+        .self-pic img {
+            width: 100%;
+        }
+
+        .other-pic {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+
+        }
+
+        .other-pic img {
+            margin: 20px;
+            width: 100px;
+        }
+
+        .basic-information {
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="self-introdution">
+        <div class="self-pic"><img src="" alt=""></div>
+        <div class="basic-information">
+            <div class="information"></div>
+            <div class="information"></div>
+            <div class="information"></div>
+            <div class="information"></div>
+        </div>
+        <div class="other-pic"><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+    </section>
+
+    <script>
+        let img1 = document.querySelector(".self-introdution img");
+        img1.src = "./pic/273489532_4891709444221266_6909267075349769252_n.jpg";
+        let basic_information = document.querySelectorAll(".basic-information .information");
+        let name = "姓名: 梅茵";
+        let email = "Email: 沒有這種東西";
+        let school = "學校: 貴族院";
+        let habbits = "興趣: read book"
+        basic_information[0].innerText = `${name}`;
+        basic_information[1].innerText = `${email}`;
+        basic_information[2].innerText = `${school}`;
+        basic_information[3].innerText = `${habbits}`;
+
+        const imagesArray = [
+            "https://cs-f.ecimg.tw/items/DJBNBUD900DZJG6/000001_1644858641.jpg",
+            "https://cs-d.ecimg.tw/items/DJBQ0HD900EW1N9/000001_1650005700.jpg",
+            "https://cs-d.ecimg.tw/items/QFCD0ZD900AR8IN/000001_1594314723.jpg"
+        ]
+
+        let img2 = document.querySelectorAll(".other-pic img")
+
+        imagesArray.forEach((url, index) => {
+            img2[index].src = url;
+            // document.write(`${url}. ${item}`)
+        });
+
+
+    </script>
+</body>
+
+</html>
