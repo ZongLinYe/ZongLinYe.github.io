@@ -1,0 +1,350 @@
+.sunplant {
+  margin: auto;
+  text-align: center;
+  max-width: 1200px;
+}
+.sunplant-item {
+  margin-bottom: 70px;
+}
+
+.sunplant-header {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.sunplant-header-nav {
+  position: absolute;
+  left: 0;
+}
+.sunplant-header-nav-ul-lv1 {
+  display: flex;
+}
+.sunplant-header-nav-ul-lv1-li {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sunplant-header-logo-img {
+  padding-top: 15px;
+  width: 50%;
+  vertical-align: bottom;
+}
+.sunplant-header-logo-h1 {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.sunplant-header-person-area {
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+}
+.sunplant-header-person-area i {
+  margin: 0 5px;
+}
+
+.sunplant-new-product {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-image: url(./pic/bg-slide10.webp);
+}
+.sunplant-new-product-content {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.sunplant-new-product-content-item {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sunplant-new-product-content-title {
+  font-size: 36px;
+  line-height: 1.1;
+  margin-bottom: 5px;
+}
+.sunplant-new-product-content-money {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.sunplant-new-product-content-shop-link {
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 15px 20px;
+  background-color: black;
+  font-size: 12px;
+  color: white;
+}
+.sunplant-new-product-pic {
+  width: 50%;
+}
+.sunplant-new-product-pic-img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.sunplant-important-benefits {
+  padding: 0 30px;
+}
+.sunplant-important-benefits-title {
+  color: #518432;
+  line-height: 1.5;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.sunplant-important-benefits-text {
+  color: #b3b4b3;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.sunplant-important-benefits-container-group-item {
+  text-align: left;
+  margin-bottom: 40px;
+}
+.sunplant-important-benefits-container-group-item-title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 2;
+}
+.sunplant-important-benefits-container-group-item-text {
+  color: #b3b4b3;
+  line-height: 1.5;
+}
+.sunplant-important-benefits-container-group-pic-img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.sunplant-staff-pick-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #518432;
+  margin-bottom: 50px;
+}
+.sunplant-staff-pick-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sunplant-staff-pick-group-item.col {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+.sunplant-staff-pick-group-item-pic-img {
+  width: 100%;
+  vertical-align: top;
+}
+.sunplant-staff-pick-group-item-pic-img-after {
+  display: none;
+}
+.sunplant-staff-pick-group-item-content-title {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.sunplant-staff-pick-group-item-content-price {
+  font-size: 18px;
+  font-weight: 700;
+}
+.sunplant-staff-pick-group-item-content-price-origianl-price.have-discount {
+  font-size: 14px;
+}
+.sunplant-accessories {
+  padding: 100px 10px;
+  background-image: url(./pic/bg-video1.jpg);
+}
+.sunplant-accessories-content {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sunplant-accessories-content-title {
+  color: #518432;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.sunplant-accessories-content-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.sunplant-accessories-content-shop-link {
+  color: #000;
+  display: inline-block;
+  width: 160px;
+  text-align: center;
+  padding: 15px 0;
+  letter-spacing: 2.5px;
+  border: 1px solid #000;
+}
+.sunplant-accessories-video {
+  width: 100%;
+  aspect-ratio: 560/315;
+}
+.sunplant-accessories-video-iframe {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.sunplant-instagram-icon {
+  font-size: 80px;
+}
+.sunplant-instagram-title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 20px 0 70px 0;
+}
+.sunplant-instagram-commodities-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sunplant-instagram-commodities-list .sunplant-instagram-commodities-list-commodity:nth-child(3) {
+  display: none;
+}
+.sunplant-instagram-commodities-list .sunplant-instagram-commodities-list-commodity:nth-child(4) {
+  display: none;
+}
+.sunplant-instagram-commodities-list-commodity-img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.sunplant-footer {
+  background-color: #f4f4f4;
+  padding: 55px 0;
+}
+.sunplant-footer-title {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.sunplant-footer-logo {
+  width: 150px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.sunplant-footer-logo-img {
+  width: 100%;
+  vertical-align: top;
+}
+.sunplant-footer-our-information-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.sunplant-footer-our-information-list-item {
+  padding: 5px 10px;
+}
+.sunplant-footer-our-information-list-item-link {
+  display: inline-block;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.sunplant-footer-our-social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.sunplant-footer-our-social-media-list-item {
+  width: 45px;
+  height: 45px;
+  margin: 10px 10px;
+  background-color: #222222;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.sunplant-footer-our-social-media-list-item-icon {
+  line-height: 44px;
+  display: block;
+  color: white;
+}
+.sunplant-footer-design-by {
+  color: #adb3ba;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .sunplant-new-product {
+    padding: 70px 0;
+  }
+  .sunplant-new-product-content {
+    justify-content: center;
+  }
+  .sunplant-new-product-content-title {
+    font-size: 46px;
+  }
+  .sunplant-important-benefits-title {
+    font-size: 30px;
+  }
+  .sunplant-important-benefits-arrange-switch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sunplant-important-benefits .sunplant-important-benefits-container-group:nth-child(1) .sunplant-important-benefits-container-group-item {
+    text-align: right;
+  }
+  .sunplant-important-benefits-container-group {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .sunplant-important-benefits-container-group-pic {
+    order: -1;
+    width: 60%;
+  }
+  .sunplant-accessories {
+    display: flex;
+  }
+  .sunplant-instagram-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .sunplant-instagram-commodities-list .sunplant-instagram-commodities-list-commodity:nth-child(3) {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sunplant-new-product {
+    padding: 70px 0;
+  }
+  .sunplant-new-product-content {
+    justify-content: center;
+  }
+  .sunplant-new-product-content-title {
+    font-size: 60px;
+  }
+  .sunplant-important-benefits-title {
+    font-size: 30px;
+  }
+  .sunplant-important-benefits-arrange-switch {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+  }
+  .sunplant-important-benefits-container-group-pic {
+    order: 0;
+  }
+  .sunplant-instagram-commodities-list .sunplant-instagram-commodities-list-commodity:nth-child(4) {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
