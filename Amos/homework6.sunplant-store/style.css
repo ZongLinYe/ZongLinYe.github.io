@@ -7,6 +7,11 @@
   margin-bottom: 70px;
 }
 
+#sunplant-header-switch {
+  position: absolute;
+  display: none;
+}
+
 .sunplant-header {
   display: flex;
   align-items: flex-end;
@@ -17,14 +22,21 @@
   top: 0;
   background-color: white;
 }
-.sunplant-header-nav {
+.sunplant-header-switch {
+  position: absolute;
+  left: 10px;
+}
+.sunplant-header-main-menu {
+  display: none;
+}
+.sunplant-header-main-menu-nav {
   position: absolute;
   left: 0;
 }
-.sunplant-header-nav-ul-lv1 {
+.sunplant-header-main-menu-nav-ul-lv1 {
   display: flex;
 }
-.sunplant-header-nav-ul-lv1-li {
+.sunplant-header-main-menu-nav-ul-lv1-li {
   padding: 10px 15px;
   font-size: 14px;
   font-weight: 600;
@@ -106,7 +118,7 @@
   color: #b3b4b3;
   line-height: 1.5;
   margin-bottom: 20px;
-  text-align: left;
+  text-align: center;
 }
 .sunplant-important-benefits-container-group-item {
   text-align: left;
@@ -282,6 +294,27 @@
 }
 
 @media screen and (min-width: 768px) {
+  #sunplant-header-switch {
+    position: absolute;
+    display: none;
+  }
+
+  .sunplant-header-switch {
+    position: absolute;
+    left: 10px;
+  }
+  .sunplant-header-main-menu-nav {
+    position: absolute;
+    left: 0;
+  }
+  .sunplant-header-main-menu-nav-ul-lv1 {
+    display: flex;
+  }
+  .sunplant-header-main-menu-nav-ul-lv1-li {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
   .sunplant-new-product {
     padding: 70px 0;
   }
@@ -323,6 +356,37 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .sunplant-header-switch {
+    position: relative;
+    left: 10px;
+    display: none;
+  }
+  .sunplant-header-main-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 33px;
+    z-index: 3;
+  }
+  .sunplant-header-main-menu-this-and-login {
+    display: none;
+  }
+  .sunplant-header-main-menu-nav {
+    position: absolute;
+    left: 0;
+  }
+  .sunplant-header-main-menu-nav-ul-lv1 {
+    display: flex;
+  }
+  .sunplant-header-main-menu-nav-ul-lv1-li {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .sunplant-header-main-menu-close {
+    display: none;
+  }
   .sunplant-new-product {
     padding: 70px 0;
   }

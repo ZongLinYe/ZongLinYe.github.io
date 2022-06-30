@@ -8,6 +8,11 @@
   }
 }
 
+#sunplant-header-switch {
+  position: absolute;
+  display: none;
+}
+
 .sunplant-header {
   display: flex;
   align-items: flex-end;
@@ -16,20 +21,36 @@
   position: sticky;
   top: 0;
   background-color: white;
-
-  &-nav {
+  &-switch {
     position: absolute;
-    left: 0;
-    &-ul-lv1 {
-      display: flex;
-      &-li {
-        padding: 10px 15px;
-        font-size: 14px;
+    left: 10px;
+  }
 
-        font-weight: 600;
+  &-main-menu {
+    display: none;
+    &-this-and-login {
+      &-menu {
+      }
+      &-login {
       }
     }
+    &-nav {
+      position: absolute;
+      left: 0;
+      &-ul-lv1 {
+        display: flex;
+        &-li {
+          padding: 10px 15px;
+          font-size: 14px;
+
+          font-weight: 600;
+        }
+      }
+    }
+    &-close {
+    }
   }
+
   &-logo {
     &-img {
       padding-top: 15px;
@@ -116,7 +137,7 @@
     color: #b3b4b3;
     line-height: 1.5;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
   }
   &-container-group {
     &-item {
@@ -333,13 +354,42 @@
     }
   }
 
+  #sunplant-header-switch {
+    position: absolute;
+    display: none;
+  }
+
   .sunplant-header {
-    &-nav {
-      &-ul-lv1 {
-        &-li {
+    &-switch {
+      position: absolute;
+      left: 10px;
+    }
+
+    &-main-menu {
+      // display: none;
+      &-this-and-login {
+        &-menu {
+        }
+        &-login {
         }
       }
+      &-nav {
+        position: absolute;
+        left: 0;
+        &-ul-lv1 {
+          display: flex;
+          &-li {
+            padding: 10px 15px;
+            font-size: 14px;
+
+            font-weight: 600;
+          }
+        }
+      }
+      &-close {
+      }
     }
+
     &-logo {
       &-img {
       }
@@ -512,10 +562,41 @@
   }
 
   .sunplant-header {
-    &-nav {
-      &-ul-lv1 {
-        &-li {
+    &-switch {
+      position: relative;
+      left: 10px;
+      display: none;
+    }
+
+    &-main-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 33px;
+      z-index: 3;
+      &-this-and-login {
+        display: none;
+        &-menu {
         }
+        &-login {
+        }
+      }
+      &-nav {
+        position: absolute;
+        left: 0;
+        &-ul-lv1 {
+          display: flex;
+          &-li {
+            padding: 10px 15px;
+            font-size: 14px;
+
+            font-weight: 600;
+          }
+        }
+      }
+      &-close {
+        display: none;
       }
     }
     &-logo {
