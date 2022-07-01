@@ -283,6 +283,10 @@
     margin: auto;
   }
 
+  .fa-user {
+    display: none;
+  }
+
   .sunplant-header-switch {
     position: absolute;
     width: 35px;
@@ -314,6 +318,7 @@
   .sunplant-header-main-menu {
     position: fixed;
     left: -100%;
+    z-index: 200;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.677);
