@@ -7,11 +7,6 @@
   margin-bottom: 70px;
 }
 
-#sunplant-header-switch {
-  position: absolute;
-  display: none;
-}
-
 .sunplant-header {
   display: flex;
   align-items: flex-end;
@@ -21,25 +16,6 @@
   position: sticky;
   top: 0;
   background-color: white;
-}
-.sunplant-header-switch {
-  position: absolute;
-  left: 10px;
-}
-.sunplant-header-main-menu {
-  display: none;
-}
-.sunplant-header-main-menu-nav {
-  position: absolute;
-  left: 0;
-}
-.sunplant-header-main-menu-nav-ul-lv1 {
-  display: flex;
-}
-.sunplant-header-main-menu-nav-ul-lv1-li {
-  padding: 10px 15px;
-  font-size: 14px;
-  font-weight: 600;
 }
 .sunplant-header-logo-img {
   padding-top: 15px;
@@ -293,27 +269,149 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 991px) {
   #sunplant-header-switch {
     position: absolute;
-    display: none;
+  }
+
+  #sunplant-header-switch:checked ~ .sunplant-header-main-menu {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
   }
 
   .sunplant-header-switch {
     position: absolute;
-    left: 10px;
+    width: 35px;
+    height: 35px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .sunplant-header-switch-span {
+    display: block;
+    background-color: #518432;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .sunplant-header-switch .hamburger-top {
+    width: 80%;
+  }
+  .sunplant-header-switch .hamburger-center {
+    width: 50%;
+  }
+  .sunplant-header-switch .hamburger-bottom {
+    width: 30%;
+  }
+  .sunplant-header-main-menu {
+    position: fixed;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.677);
+    transition: 1s;
+  }
+  .sunplant-header-main-menu-container {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    background-color: #ffffff;
+  }
+  .sunplant-header-main-menu-this-and-login {
+    border-bottom: 1px solid #cccccc;
+    width: 300px;
+    display: flex;
+    height: 50px;
+    position: relative;
+    z-index: 500;
+  }
+  .sunplant-header-main-menu-this-and-login-menu {
+    width: 50%;
+    color: white;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sunplant-header-main-menu-this-and-login-menu .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30px;
+    width: 30px;
+  }
+  .sunplant-header-main-menu-this-and-login-menu .hamburger-menu .sunplant-header-span {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+  }
+  .sunplant-header-main-menu-this-and-login-menu .hamburger-menu .hamburger-center {
+    width: 15px;
+  }
+  .sunplant-header-main-menu-this-and-login-login {
+    width: 50%;
+    color: #000;
+    background-color: #ffffff;
+    position: relative;
+  }
+  .sunplant-header-main-menu-this-and-login-login span {
+    padding: 0 10px;
+  }
+  .sunplant-header-main-menu-this-and-login-login .txt-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
   .sunplant-header-main-menu-nav {
-    position: absolute;
-    left: 0;
+    width: 300px;
+    text-align: start;
+    background-color: white;
   }
   .sunplant-header-main-menu-nav-ul-lv1 {
-    display: flex;
+    padding: 20px 10px;
   }
   .sunplant-header-main-menu-nav-ul-lv1-li {
-    padding: 10px 15px;
     font-size: 14px;
     font-weight: 600;
+  }
+  .sunplant-header-main-menu-nav-ul-lv1-li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .sunplant-header-main-menu .sunplant-header-switch-close {
+    font-size: 18px;
+    padding: 15px 0;
+    display: block;
+    color: white;
+  }
+  .sunplant-header-main-menu-close {
+    width: 300px;
+    justify-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    background-color: #518432;
+  }
+}
+@media screen and (min-width: 768px) {
+  #sunplant-header-switch {
+    position: absolute;
+  }
+  .sunplant-header-main-menu-nav {
+    left: 0;
   }
   .sunplant-new-product {
     padding: 70px 0;
@@ -356,33 +454,32 @@
   }
 }
 @media screen and (min-width: 992px) {
-  .sunplant-header-switch {
-    position: relative;
-    left: 10px;
+  #sunplant-header-switch {
+    position: absolute;
     display: none;
   }
-  .sunplant-header-main-menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    top: 33px;
-    z-index: 3;
-  }
+
   .sunplant-header-main-menu-this-and-login {
     display: none;
   }
   .sunplant-header-main-menu-nav {
+    padding: 0 15px;
     position: absolute;
     left: 0;
+    bottom: 0;
   }
   .sunplant-header-main-menu-nav-ul-lv1 {
     display: flex;
   }
-  .sunplant-header-main-menu-nav-ul-lv1-li {
+  .sunplant-header-main-menu-nav-ul-lv1-li a {
+    color: #000;
+    text-decoration: none;
     padding: 10px 15px;
-    font-size: 14px;
-    font-weight: 600;
+    display: block;
+    font-weight: 700;
+  }
+  .sunplant-header-main-menu .sunplant-header-switch-close {
+    display: none;
   }
   .sunplant-header-main-menu-close {
     display: none;
