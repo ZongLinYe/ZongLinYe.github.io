@@ -272,6 +272,7 @@
 @media screen and (max-width: 991px) {
   #sunplant-header-switch {
     position: absolute;
+    display: none;
   }
 
   #sunplant-header-switch:checked ~ .sunplant-header-main-menu {
