@@ -4,6 +4,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
   display: block;
 }
 
@@ -27,6 +28,10 @@ img {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
+  #group-switch:checked ~ .group-nav .item-close {
+    left: 0;
+  }
+
   #nav-link-lv1-home {
     display: none;
     position: absolute;
@@ -35,6 +40,63 @@ img {
 
   #nav-link-lv1-home:checked ~ .nav-ul-lv2 {
     display: block;
+  }
+
+  #nav-link-lv1-shop {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #nav-link-lv1-shop:checked ~ .nav-ul-lv2 {
+    display: block;
+  }
+
+  #nav-link-lv1-featured {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #nav-link-lv1-featured:checked ~ .nav-ul-lv2 {
+    display: block;
+  }
+
+  #nav-link-lv1-pages {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #nav-link-lv1-pages:checked ~ .nav-ul-lv2 {
+    display: block;
+  }
+
+  #nav-link-lv1-element {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #nav-link-lv1-element:checked ~ .nav-ul-lv2 {
+    display: block;
+  }
+
+  #box-menu,
+#box-login {
+    display: none;
+    position: absolute;
+    top: 0;
+  }
+
+  #box-menu:checked ~ .item-nav,
+#box-login:checked ~ .item-login {
+    display: block;
+  }
+
+  #box-menu:checked ~ .item-login,
+#box-login:checked ~ .item-nav {
+    display: none;
   }
 
   .header-sunplate {
@@ -93,12 +155,17 @@ img {
 
   .group-nav {
     position: fixed;
+    bottom: 0;
+    top: 0;
     left: -100%;
     z-index: 100;
+    transition: 1s;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
   }
   .group-nav .item {
     width: 300px;
-    background-color: rgba(0, 255, 255, 0.521);
   }
   .group-nav .item-switch {
     display: flex;
@@ -121,6 +188,7 @@ img {
   }
   .group-nav .text {
     padding-left: 10px;
+    cursor: pointer;
   }
   .group-nav .box-login {
     border-bottom: 1px solid #cccccc;
@@ -151,7 +219,7 @@ img {
   }
   .group-nav .item-nav {
     background-color: white;
-    height: 100%;
+    flex-grow: 1;
   }
   .group-nav .nav-ul .nav-ul {
     display: none;
@@ -174,12 +242,12 @@ img {
     font-weight: 300;
     width: 10%;
     box-sizing: border-box;
+    cursor: pointer;
   }
   .group-nav .nav-link-lv1 {
-    width: 100%;
-    height: 100%;
     box-sizing: border-box;
     padding-bottom: 30px;
+    font-size: 16px;
   }
   .group-nav .nav-ul-lv2 {
     padding-bottom: 20px;
@@ -188,17 +256,82 @@ img {
     padding-bottom: 30px;
   }
   .group-nav .nav-li-lv2 .nav-link-lv2 {
-    font-size: 14px;
+    margin-bottom: 7px;
+    font-size: 15px;
+    margin-left: 5px;
+  }
+  .group-nav .item-login {
+    display: none;
   }
   .group-nav .item-close {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    left: 0;
-    z-index: 500;
+    left: -100%;
     color: white;
     background-color: #518432;
     font-size: 12px;
     line-height: 50px;
+    transition: 1s;
+  }
+  .group-nav .nav-link-lv2-underline {
+    background-color: #518432;
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+  }
+  .group-nav .nav-link-lv3 {
+    font-size: 14px;
+    padding: 5px 0;
+    margin-left: 10px;
+  }
+  .group-nav .item-login {
+    text-align: center;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .group-nav .item-login .box-icon {
+    font-size: 32px;
+    padding: 30px 0;
+  }
+  .group-nav .item-login .user-input {
+    width: 90%;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .group-nav .user-input-forgot {
+    font-size: 12px;
+    text-align: start;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .group-nav .user-input-btn {
+    background-color: black;
+    color: white;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+    padding: 15px 0;
+    letter-spacing: 4px;
+  }
+  .group-nav .box-or {
+    margin: 20px 10px;
+  }
+  .group-nav .box-or::after,
+.group-nav .box-or::before {
+    content: "";
+    height: 1px;
+    background-color: #cccccc;
+    flex-grow: 1;
+    margin: 0 10px;
+  }
+  .group-nav .box-Register {
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .group-user {

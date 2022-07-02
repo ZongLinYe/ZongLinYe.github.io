@@ -30,19 +30,24 @@
             </div>
             <input type="checkbox" name="" id="group-switch">
             <div class="group group-nav">
+                <input type="radio" name="item-switch" id="box-menu" checked>
+                <input type="radio" name="item-switch" id="box-login">
                 <div class="item item-switch">
-                    <div class="box box-menu">
+
+
+                    <label for="box-menu" class="box box-menu">
                         <div class="icon icon-hamburger">
                             <span class="hamburger-line hamburger-line-top"></span>
                             <span class="hamburger-line hamburger-line-center"></span>
                             <span class="hamburger-line hamburger-line-bottom"></span>
                         </div>
                         <div class="text text-menu">MENU</div>
-                    </div>
-                    <div class="box box-login">
+                    </label>
+
+                    <label for="box-login" class="box box-login">
                         <div class="icon icon-login"><i class="fa-regular fa-circle-user"></i></div>
                         <div class="text text-login">LOGIN</div>
-                    </div>
+                    </label>
                 </div>
                 <nav class="item item-nav">
                     <ul class="nav-ul nav-ul-lv1">
@@ -70,10 +75,12 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">SHOP</a>
-                            <label for="" class="wrap-control wrap-control-lv1">></label>
+                            <input type="checkbox" name="" id="nav-link-lv1-shop">
+                            <label for="nav-link-lv1-shop" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">SHOP FILTER</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Filter Push Left</a>
@@ -86,6 +93,7 @@
                                 </li>
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">SHOP LAYOUT</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Full Width</a>
@@ -108,10 +116,12 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">FEATURED</a>
-                            <label for="" class="wrap-control wrap-control-lv1">></label>
+                            <input type="checkbox" name="" id="nav-link-lv1-featured">
+                            <label for="nav-link-lv1-featured" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">BLOG LAYOUTS</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Blog Standar No Sidebar</a>
@@ -133,6 +143,7 @@
                                 </li>
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">PRODUCT LAYOUT</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Product Large Images</a>
@@ -154,6 +165,7 @@
                                 </li>
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">PRODUCT TYPES</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Variable</a>
@@ -177,6 +189,7 @@
                                 </li>
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">SINGLE POST</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Single Post No Sidebar</a>
@@ -193,7 +206,9 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">PAGES</a>
-                            <label for="" class="wrap-control wrap-control-lv1">></label>
+                            <input type="checkbox" name="" id="nav-link-lv1-pages">
+
+                            <label for="nav-link-lv1-pages" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">About Us</a>
@@ -208,10 +223,13 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">ELEMENT</a>
-                            <label for="" class="wrap-control wrap-control-lv1">></label>
+                            <input type="checkbox" name="" id="nav-link-lv1-element">
+
+                            <label for="nav-link-lv1-element" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">MAIN STYLE</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">No Sidebar</a>
@@ -233,6 +251,7 @@
                                 </li>
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">POST FORMAT</a>
+                                    <span class="nav-link-lv2-underline"></span>
                                     <ul class="nav nav-ul-lv3">
                                         <li class="nav-li nav-li-lv3">
                                             <a href="#" class="nav-link nav-link-lv3">Elementor</a>
@@ -256,17 +275,20 @@
                 <div class="item item-login">
                     <div class="box box-icon"><i class="fa-regular fa-circle-user"></i></div>
                     <form action="" class="box box-user-input">
-                        <label for="">
-                            <input type="email" class="user-input user-input-email" name="" id="">
-                            <input type="password" class="user-input user-input-password" name="" id="">
+                        <label class="user-input-label" for="">
+                            <input type="email" placeholder="Email address" class="user-input user-input-email"
+                                name="user-input" id="">
+                            <input type="password" placeholder="Password" class="user-input user-input-password"
+                                name="user-input" id="">
                         </label>
-                        <a href="#" class="user-input user-input-forget">Forgot your password?</a>
-                        <a href="#" class="user-input user-input-btn">LOG IN</a>
                     </form>
+
+                    <a href="#" class=" user-input-forgot">Forgot your password?</a>
+                    <a href="#" class=" user-input-btn">LOG IN</a>
                     <div class="box box-or">OR</div>
-                    <div class="box box-Register">
-                        <a href="#">Register now →</a>
-                    </div>
+
+                    <a href="#" class="box-Register">Register now →</a>
+
                 </div>
                 <label for="group-switch" class="item item-close">
                     <div class="box box-close">
