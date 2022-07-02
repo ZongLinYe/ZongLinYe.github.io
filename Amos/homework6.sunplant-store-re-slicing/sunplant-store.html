@@ -21,10 +21,10 @@
         <div class="wrap wrap-header">
             <div class="group group-hamburger">
                 <div class="item item-hamburger">
-                    <label for="switch-group-nav" class="icon icon-hamburger">
-                        <span class="hamburger-line hambuerger-line-top"></span>
-                        <span class="hamburger-line hambuerger-line-center"></span>
-                        <span class="hamburger-line hambuerger-line-bottom"></span>
+                    <label for="group-switch" class="icon icon-hamburger">
+                        <span class="hamburger-line hamburger-line-top"></span>
+                        <span class="hamburger-line hamburger-line-center"></span>
+                        <span class="hamburger-line hamburger-line-bottom"></span>
                     </label>
                 </div>
             </div>
@@ -33,9 +33,9 @@
                 <div class="item item-switch">
                     <div class="box box-menu">
                         <div class="icon icon-hamburger">
-                            <span class="hambuerger-line hambuerger-line-top"></span>
-                            <span class="hambuerger-line hambuerger-line-center"></span>
-                            <span class="hambuerger-line hambuerger-line-bottom"></span>
+                            <span class="hamburger-line hamburger-line-top"></span>
+                            <span class="hamburger-line hamburger-line-center"></span>
+                            <span class="hamburger-line hamburger-line-bottom"></span>
                         </div>
                         <div class="text text-menu">MENU</div>
                     </div>
@@ -48,7 +48,8 @@
                     <ul class="nav-ul nav-ul-lv1">
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">Home</a>
-                            <span class="wrap-control wrap-control-lv1">></span>
+                            <input type="checkbox" name="" id="nav-link-lv1-home">
+                            <label for="nav-link-lv1-home" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">Home 1</a>
@@ -69,7 +70,7 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">SHOP</a>
-                            <span class="wrap-control wrap-control-lv1">></span>
+                            <label for="" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">SHOP FILTER</a>
@@ -107,7 +108,7 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">FEATURED</a>
-                            <span class="wrap-control wrap-control-lv1">></span>
+                            <label for="" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">BLOG LAYOUTS</a>
@@ -192,7 +193,7 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">PAGES</a>
-                            <span class="wrap-control wrap-control-lv1">></span>
+                            <label for="" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">About Us</a>
@@ -207,7 +208,7 @@
                         </li>
                         <li class="nav-li nav-li-lv1">
                             <a href="#" class="nav-link nav-link-lv1">ELEMENT</a>
-                            <span class="wrap-control wrap-control-lv1">></span>
+                            <label for="" class="wrap-control wrap-control-lv1">></label>
                             <ul class="nav-ul nav-ul-lv2">
                                 <li class="nav-li nav-li-lv2">
                                     <a href="#" class="nav-link nav-link-lv2">MAIN STYLE</a>
@@ -267,12 +268,12 @@
                         <a href="#">Register now →</a>
                     </div>
                 </div>
-                <div class="item item-close">
+                <label for="group-switch" class="item item-close">
                     <div class="box box-close">
                         <div class="icon icon-close"><i class="fa-solid fa-xmark"></i></div>
                         <div class="text text-close">CLOSE</div>
                     </div>
-                </div>
+                </label>
             </div>
             <div class="group group-logo">
                 <div class="item item-logo">
@@ -283,7 +284,16 @@
                 </div>
             </div>
             <div class="group group-user">
-                <div class="item item-user"></div>
+                <div class="item item-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="item item-user">
+                    <i class="fa-regular fa-circle-user"></i>
+                </div>
+                <div class="item item-cart">
+                    <span class="cart-number">0</span>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
             </div>
         </div>
 
