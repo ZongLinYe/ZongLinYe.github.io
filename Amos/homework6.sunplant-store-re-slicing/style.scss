@@ -6,3 +6,93 @@ a {
     // color: black;
     display: block;
 }
+
+.header {
+    .wrap {
+    }
+    .group {
+    }
+    .group-nav {
+    }
+    .group-logo {
+        .log-img {
+        }
+    }
+    .group-user {
+    }
+}
+
+@media screen and (max-width: 991px) {
+    // 手機 平板 nav
+
+    #group-switch {
+        position: absolute;
+        top: 0;
+    }
+
+    .header-sunplate {
+        position: sticky;
+        top: 0;
+    }
+    .wrap-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .group-hamburger {
+        .item-hamburger {
+            display: flex;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+        }
+        .icon-hamburger {
+            width: 40px;
+            height: 32px;
+            // background-color: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .hamburger-line {
+                margin: 0 5px;
+                height: 2px;
+                width: 30px;
+                display: block;
+                background-color: #518432;
+            }
+            .hamburger-line.hambuerger-line-center {
+                width: 50%;
+            }
+            .hamburger-line.hambuerger-line-bottom {
+                width: 30%;
+            }
+        }
+    }
+
+    .group-logo {
+        .item-logo {
+            width: 150px;
+        }
+        .logo-title {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+        .logo-img {
+            width: 100%;
+        }
+    }
+
+    .group-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    // 平板
+}
+
+@media screen and (min-width: 992px) {
+    // 桌機 nav
+}
