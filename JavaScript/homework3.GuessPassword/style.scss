@@ -1,0 +1,44 @@
+.container {
+    width: 90%;
+}
+
+.wrap {
+    text-align: center;
+}
+
+.display-result {
+    font-size: 36px;
+    padding: 50px 0;
+    border: 1px solid #000;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.product-random-number {
+    margin-bottom: 30px;
+}
+.number-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.number-btn {
+    background-color: #000;
+    color: white;
+}
+
+.function-btn {
+    background-color: #000;
+    color: white;
+}
+
+.number-btn-0 {
+    order: 1;
+}
+.start-btn {
+    order: 2;
+    color: greenyellow;
+}
+
+.clear-btn {
+    color: red;
+}

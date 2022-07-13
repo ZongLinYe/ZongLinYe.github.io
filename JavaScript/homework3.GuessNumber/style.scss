@@ -1,0 +1,114 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+.wrap {
+    text-align: center;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    min-width: 300px;
+}
+
+.game-operate-btn-group {
+    height: 16%;
+    // margin: 2% 0;
+    .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        // justify-content: center;
+        // justify-items: center;
+        align-items: center;
+        // padding: 0 5%;
+    }
+
+    .game-operate-btn {
+        display: block;
+        width: 33.333333%;
+        padding: 10px 0;
+        // background-color: rgba(255, 255, 255, 0);
+        font-size: 16px;
+        border: none;
+        font-weight: 700;
+        background-color: rgb(26, 26, 26);
+        color: white;
+        overflow: hidden;
+        transition: 0.5s;
+        &:hover {
+            background-color: rgb(57, 57, 57);
+        }
+    }
+}
+
+.display-result-group {
+    height: 60%;
+    margin-bottom: 2%;
+    background-color: rgba(214, 214, 214, 0.584);
+
+    .row {
+        overflow: auto;
+    }
+}
+
+.input-data-group {
+    height: 16%;
+    .row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        // justify-content: center;
+        // justify-items: center;
+        align-items: center;
+        // padding: 0 5%;
+    }
+    .input-data-item {
+        // line-height: 30px;
+        height: 30px;
+        border: 1px solid #bebebe;
+    }
+    .text {
+        line-height: 30px;
+        background-color: #f4f4f4;
+    }
+    .check-btn {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.col.game-operate-btn.start-btn.rounded-start.green {
+    &:hover {
+        background-color: rgb(0, 117, 133);
+    }
+    background-color: rgb(29, 43, 55);
+}
+
+.col-2.check-btn.rounded-end.input-data-item.game-operate-btn.blue {
+    &:hover {
+        background-color: rgb(243, 152, 255);
+    }
+    background-color: rgb(249, 200, 255);
+}
+
+.new-row {
+    display: flex;
+    padding: 10px 5px;
+}
+.new-guess-result {
+    // margin-left: 50px;
+}
+
+.new-guess-number {
+    // line-height: 5px;
+    padding-left: 20px;
+    position: relative;
+    top: 3px;
+}
