@@ -1,0 +1,253 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.commodity-information .commodity-name {
+  margin-bottom: 0;
+  line-height: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.commodity-information .product-name {
+  font-size: 16px;
+  font-weight: 800;
+  display: block;
+}
+.commodity-information .commodity-price {
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+.container-installment {
+  text-align: center;
+  background-color: #f5f5f7;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+input {
+  box-shadow: none !important;
+}
+
+.navbar-collapse.collapse.show {
+  padding-top: 20px;
+}
+.navbar-collapse.collapse.show form {
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+.navbar-collapse.collapse.show input {
+  margin-left: 10px;
+  background-color: rgb(54, 54, 54);
+}
+.navbar-collapse.collapse.show .nav-item {
+  margin-left: 20px;
+  font-size: 14px;
+}
+.navbar-collapse.collapse.show .nav-item:not(:first-child) {
+  border-top: 1px solid lightgrey;
+}
+
+.nav-container {
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+}
+.container-commodity {
+  position: relative;
+  text-align: center;
+}
+.container-commodity .all-new {
+  color: rgb(171, 0, 0);
+  font-size: 10px;
+}
+.container-commodity .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.container-commodity .text {
+  font-size: 14px;
+}
+.container-commodity .url {
+  text-decoration: none;
+  font-size: 14px;
+}
+.container-commodity .img-box {
+  font-size: 12px;
+}
+.container-commodity .img-box .url {
+  text-decoration: none;
+}
+.container-commodity .accordion-header {
+  background-color: transparent;
+}
+.container-commodity .choose-mode {
+  background-color: transparent;
+}
+.container-commodity .choose-mode .collapse-box .text {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  padding: 5px 0;
+}
+.container-commodity .choose-mode .collapse-box .url {
+  font-size: 10px;
+  text-decoration: none;
+}
+.container-commodity .choose-mode .choose-price {
+  font-size: 12px;
+}
+.container-commodity .choose-mode .choose-monitor {
+  font-size: 12px;
+}
+.container-commodity .choose-mode .model-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+.container-commodity .choose-mode .monitor {
+  font-size: 12px;
+}
+.container-commodity .choose-mode .model-price {
+  padding: 13px 0;
+  font-size: 12px;
+}
+.container-commodity .choose-mode .model-btn {
+  border: 1px solid rgb(202, 202, 202);
+}
+.container-commodity .choose-mode .model-btn:hover {
+  border: 1px solid rgb(60, 60, 60);
+}
+.container-commodity .choose-mode .model-information {
+  padding: 7px 0;
+}
+.container-commodity .color-information i {
+  font-size: 24px;
+}
+.container-commodity .color-information i.green {
+  color: #576856;
+}
+.container-commodity .color-information i.graphite {
+  color: #5d5c58;
+}
+.container-commodity .color-information i.silver {
+  color: #f2f3ee;
+}
+.container-commodity .color-information i.gold {
+  color: #faead3;
+}
+.container-commodity .color-information i.blue {
+  color: #adc6dc;
+}
+.container-commodity .color-btn {
+  padding: 10px 0;
+  border: 1px solid rgb(202, 202, 202);
+}
+.container-commodity .color-btn:hover {
+  border: 1px solid rgb(60, 60, 60);
+}
+.container-commodity .storage-btn {
+  padding: 10px 0;
+  border: 1px solid rgb(202, 202, 202);
+}
+.container-commodity .storage-btn:hover {
+  border: 1px solid rgb(60, 60, 60);
+}
+.container-commodity .storage-group .spec-val {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.container-commodity .storage-group .spec-val .unit {
+  font-size: 14px;
+  font-weight: 700;
+}
+.container-commodity .storage-group .priceDifference {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-toggler {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    margin-bottom: 10px;
+  }
+  .navbar > .nav-container {
+    justify-content: center;
+  }
+  .navbar > .nav-container .shopping {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+  }
+  .bi.bi-bag {
+    color: #c7c8c9;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    position: absolute;
+    left: 30px;
+  }
+  .navbar form {
+    order: 1;
+  }
+  .navbar form input {
+    display: none !important;
+  }
+  .navbar form button {
+    display: none !important;
+  }
+  .navbar .nav-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navbar .nav-container .collapse.navbar-collapse {
+    flex-grow: 0;
+  }
+  .nav-item {
+    padding: 0 30px;
+  }
+  .search-icon {
+    color: #7b7b7c;
+    position: absolute;
+    right: 100px;
+    top: 9px;
+    cursor: pointer;
+  }
+  .search-icon:hover {
+    color: #c7c8c9;
+  }
+  .navbar > .nav-container .shopping {
+    position: absolute;
+    right: 35px;
+    top: 6px;
+    cursor: pointer;
+  }
+  .bi.bi-bag {
+    color: #c7c8c9;
+  }
+  .commodity-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .commodity-content .commodity-pic {
+    position: absolute;
+    order: -1;
+    left: 0;
+  }
+}/*# sourceMappingURL=AppleStore.css.map */

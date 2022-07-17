@@ -11,21 +11,6 @@ img {
     vertical-align: top;
 }
 
-.header {
-    .wrap {
-    }
-    .group {
-    }
-    .group-nav {
-    }
-    .group-logo {
-        .log-img {
-        }
-    }
-    .group-user {
-    }
-}
-
 @media screen and (max-width: 991px) {
     // 手機 平板 nav
 
@@ -98,8 +83,6 @@ img {
         display: none;
         position: absolute;
         top: 0;
-    }
-    #box-menu {
     }
 
     #box-menu:checked ~ .item-nav,

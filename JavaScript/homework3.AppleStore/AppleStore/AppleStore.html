@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple Store</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3807b66583.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./AppleStore.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-lg nav-container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-apple"></i>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="搜尋 apple.com" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <div class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">iPhone</a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="shopping">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="container-lg">
+        <div class="row">
+            <div class="col">
+                <div class="commodity-information d-flex justify-content-between">
+                    <h3 class="commodity-name">
+                        <strong class="product-name">{iPhone}</strong>
+                    </h3>
+                    <div class="commodity-price">{Price}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid container-installment">
+        <div class="row">
+            <div class="col-12">
+                <div class="installment-information d-flex justify-content-center m-auto text-center">
+                    可申請最長達 12 個月的零利率分期付款。<a href="#">進一步了解</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-lg container-commodity py-3">
+        <div class="row commodity-content">
+            <div class="col-12 col-lg-6 slogan">
+                <div class="all-new">
+                    全新
+                </div>
+                <h1 class="title">
+                    購買 {iPhone 13 Pro}
+                </h1>
+                <div class="text">以 iPhone 8 或後續機型換購，獲享最高達 NT$2,700 – NT$18,200 折抵優惠** </div>
+                <a class="url" href="#">了解「Apple Trade In 換購方案」的運作方式</a>
+            </div>
+            <div class="col-12 col-lg-6 commodity-pic">
+                <div class="img-box px-4 py-5">
+                    <img class="product-img w-100" src="https://picsum.photos/300/200/?random=10">
+                </div>
+                <svg viewBox="0 0 35 35" class="as-svgicon as-svgicon-chat as-svgicon-base as-svgicon-chatbase"
+                    role="img" aria-hidden="true" width="25px" height="25px">
+                    <path fill="none" d="M0 .213h35v35H0z"></path>
+                    <path
+                        d="M14.4 21.048a13.284 13.284 0 01-1.344.076q-.411 0-.829-.025l-.334-.02-.279.185a15.461 15.461 0 01-4.388 2.109 16.182 16.182 0 001.365-2.054l.484-.923-.941-.446a7.127 7.127 0 01-4.384-6.276c0-4.114 4.274-7.461 9.529-7.461s9.529 3.347 9.529 7.461c0 .059-.009.116-.011.174.33-.029.664-.046 1-.046 0-.043.008-.085.008-.128 0-4.677-4.67-8.461-10.529-8.461S2.75 9 2.75 13.674a8.1 8.1 0 004.95 7.181 18.048 18.048 0 01-1.573 2.305c-.481.6-.236 1.28.613 1.28 1.17 0 3.557-1.1 5.425-2.343q.448.027.888.027c.455 0 .9-.028 1.34-.069-.011-.157-.029-.312-.029-.472 0-.183.018-.357.036-.535z">
+                    </path>
+                    <path
+                        d="M32.25 21.583c0-3.749-3.745-6.782-8.443-6.782h-.1c-.351 0-.694.027-1.032.063-3.876.413-6.886 2.906-7.269 6.036a5.584 5.584 0 00-.042.678c0 .117.015.23.021.345.222 3.737 3.994 6.428 8.6 6.428.235 0 .473-.007.712-.021a10.723 10.723 0 004.35 1.878c.681 0 .878-.543.492-1.026a14.459 14.459 0 01-1.263-1.848 6.5 6.5 0 003.974-5.751zm-4.4 4.852l-.942.446.484.923a10.673 10.673 0 00.759 1.2 14.28 14.28 0 01-2.9-1.5l-.279-.185-.334.02c-.219.013-.437.019-.653.019-4.21 0-7.515-2.462-7.614-5.629 0-.048-.009-.1-.009-.144a4.521 4.521 0 01.1-.922c.5-2.386 2.87-4.288 5.908-4.75a9.506 9.506 0 011.092-.1c.113 0 .225-.013.339-.013 4.1 0 7.443 2.594 7.443 5.782a5.517 5.517 0 01-3.394 4.853z">
+                    </path>
+                </svg>
+                <a class="url" href="#">與 iPhone 專員線上交談 </a>
+            </div>
+
+            <div class="col-12 col-lg-6  choose-mode">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item model-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-model" aria-expanded="true"
+                                aria-controls="panelsStayOpen-model">
+                                <div class="collapse-box">
+                                    <div class="text">選擇機型</div>
+                                    <a class="url" href="#">哪一款機型最適合你？</a>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-model" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <div class="row model-area">
+                                    <!-- <div class="col-12 mb-3">
+                                        <button class="btn model-btn w-100 d-flex">
+                                            <div class="col-7 model-information">
+                                                <div class="text-start model-name">{iPhone 13 Pro}</div>
+                                                <div class="text-start monitor">{6.1 吋顯示器}</div>
+                                            </div>
+                                            <div class="col-5 text-end model-price">{NT$32900}</div>
+                                        </button>
+                                    </div>
+
+
+                                    <div class="col-12 mb-3">
+                                        <button class="btn model-btn w-100 d-flex">
+                                            <div class="col-7 model-information">
+                                                <div class="text-start model-name">{iPhone 13 Pro Max}</div>
+                                                <div class="text-start monitor">{6.7 吋顯示器}</div>
+                                            </div>
+                                            <div class="col-5 text-end model-price">{NT$36900}</div>
+                                        </button>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item color-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-color" aria-expanded="false"
+                                aria-controls="panelsStayOpen-color">
+                                <div class="collapse-box">
+                                    <div class="text">{選擇外觀}</div>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-color" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body color-area d-flex flex-wrap row gx-2">
+                                <div class="col-6 mb-3">
+                                    <button class="btn color-btn w-100">
+                                        <div class="color-information">
+                                            <i class="fas fa-circle green"></i>
+                                        </div>
+                                        <div class="color-name"> {{黑色}} </div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn color-btn w-100">
+                                        <div class="color-information">
+                                            <i class="fas fa-circle silver"></i>
+                                        </div>
+                                        <div class="color-name"> {{黑色}} </div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn color-btn w-100">
+                                        <div class="color-information">
+                                            <i class="fas fa-circle gold"></i>
+                                        </div>
+                                        <div class="color-name"> {{黑色}} </div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn color-btn w-100">
+                                        <div class="color-information">
+                                            <i class="fas fa-circle graphite"></i>
+                                        </div>
+                                        <div class="color-name"> {{黑色}} </div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn color-btn w-100">
+                                        <div class="color-information">
+                                            <i class="fas fa-circle blue"></i>
+                                        </div>
+                                        <div class="color-name"> {{黑色}} </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item storage-group">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-spec" aria-expanded="false"
+                                aria-controls="panelsStayOpen-spec">
+                                <div class="storage">
+                                    <div class="choose-storage-text collapse-box">
+                                        <div class="text">{選擇儲存容量}</div>
+                                        <a class="url need-storage" href="#">你需要多少儲存容量?</a>
+                                    </div>
+
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-spec" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body storage-area d-flex flex-wrap row gx-2">
+                                <div class="col-6 mb-3">
+                                    <button class="btn storage-btn w-100">
+                                        <p class="spec-val">128<span class="unit">GB</span></p>
+                                        <div class="priceDifference">{NT$ 32900起}</div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn storage-btn w-100">
+                                        <p class="spec-val">128<span class="unit">GB</span></p>
+                                        <div class="priceDifference">{NT$ 32900起}</div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn storage-btn w-100">
+                                        <p class="spec-val">128<span class="unit">GB</span></p>
+                                        <div class="priceDifference">{NT$ 32900起}</div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn storage-btn w-100">
+                                        <p class="spec-val">128<span class="unit">GB</span></p>
+                                        <div class="priceDifference">{NT$ 32900起}</div>
+                                    </button>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <button class="btn storage-btn w-100">
+                                        <p class="spec-val">128<span class="unit">GB</span></p>
+                                        <div class="priceDifference">{NT$ 32900起}</div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="./AppleStore.js"></script>
+</body>
+
+</html>

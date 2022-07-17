@@ -274,7 +274,6 @@
     position: absolute;
     display: none;
   }
-
   #sunplant-header-switch:checked ~ .sunplant-header-main-menu {
     left: 0;
     top: 0;
@@ -282,11 +281,9 @@
     right: 0;
     margin: auto;
   }
-
   .fa-user {
     display: none;
   }
-
   .sunplant-header-switch {
     position: absolute;
     width: 35px;
@@ -464,7 +461,6 @@
     position: absolute;
     display: none;
   }
-
   .sunplant-header-main-menu-this-and-login {
     display: none;
   }

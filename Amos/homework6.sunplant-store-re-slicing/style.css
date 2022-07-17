@@ -18,7 +18,6 @@ img {
     top: 0;
     display: none;
   }
-
   #group-switch:checked ~ .group-nav {
     left: 0;
     right: 0;
@@ -27,78 +26,63 @@ img {
     margin: auto;
     background-color: rgba(0, 0, 0, 0.8);
   }
-
   #group-switch:checked ~ .group-nav .item-close {
     left: 0;
   }
-
   #nav-link-lv1-home {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #nav-link-lv1-home:checked ~ .nav-ul-lv2 {
     display: block;
   }
-
   #nav-link-lv1-shop {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #nav-link-lv1-shop:checked ~ .nav-ul-lv2 {
     display: block;
   }
-
   #nav-link-lv1-featured {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #nav-link-lv1-featured:checked ~ .nav-ul-lv2 {
     display: block;
   }
-
   #nav-link-lv1-pages {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #nav-link-lv1-pages:checked ~ .nav-ul-lv2 {
     display: block;
   }
-
   #nav-link-lv1-element {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #nav-link-lv1-element:checked ~ .nav-ul-lv2 {
     display: block;
   }
-
   #box-menu,
 #box-login {
     display: none;
     position: absolute;
     top: 0;
   }
-
   #box-menu:checked ~ .item-nav,
 #box-login:checked ~ .item-login {
     display: block;
   }
-
   #box-menu:checked ~ .item-login,
 #box-login:checked ~ .item-nav {
     display: none;
   }
-
   .header-sunplate {
     position: -webkit-sticky;
     position: sticky;
@@ -108,7 +92,6 @@ img {
     display: flex;
     justify-content: center;
   }
-
   .group-hamburger {
     position: absolute;
     left: 10px;
@@ -139,7 +122,6 @@ img {
   .group-hamburger .icon-hamburger .hamburger-line.hamburger-line-bottom {
     width: 30%;
   }
-
   .group-logo .item-logo {
     padding-top: 20px;
     width: 120px;
@@ -152,7 +134,6 @@ img {
   .group-logo .logo-img {
     width: 100%;
   }
-
   .group-nav {
     position: fixed;
     bottom: 0;
@@ -333,7 +314,6 @@ img {
     font-size: 14px;
     font-weight: 500;
   }
-
   .group-user {
     position: absolute;
     right: 0;

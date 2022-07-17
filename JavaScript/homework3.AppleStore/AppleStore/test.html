@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features .item {
+        /* flex: 0 0 100%; */
+        /*remove if you don't want media query*/
+        max-width: 384px;
+        /*add if you don't want media query*/
+        width: 100%;
+        /*add if you don't want media query*/
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /*remove if you don't want media query*/
+    @media (min-width: 768px) {
+        .features .item {
+            flex: 0 0 33.33%;
+        }
+    }
+</style>
+
+<body>
+    <section class="features">
+        <div class="item">
+            <h3 class="item-name">Item1</h3>
+            <p class="item-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi fuga labore. Distinctio
+                eaque, officiis
+                quaerat molestiae sed quis labore.
+            </p>
+        </div>
+        <div class="item">
+            <h3 class="item-name">Item1</h3>
+            <p class="item-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi fuga labore. Distinctio
+                eaque, officiis
+                quaerat molestiae sed quis labore.
+            </p>
+        </div>
+        <div class="item">
+            <h3 class="item-name">Item1</h3>
+            <p class="item-desc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur sequi fuga labore. Distinctio
+                eaque, officiis
+                quaerat molestiae sed quis labore.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
