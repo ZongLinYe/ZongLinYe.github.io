@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./LoLCard.css">
+
+    <style>
+        /* img {
+            width: 100%;
+
+        } */
+
+        .text-center {
+            background-color: rgb(0, 0, 0);
+            color: lightgray;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+
+        .modal-header {
+            background-color: rgb(20, 58, 25);
+            color: azure;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title container-fluid p-5 text-center">LOL 英雄聯盟圖鑑</h1>
+
+    <div class="container-fluid">
+        <div class="row gx-4  champion-group">
+
+        </div>
+    </div>
+
+
+
+    <template id="template-card">
+        <div class="col-12 col-lg-3 col-sm-6 col-md-4  mb-3">
+            <div class="card">
+                <img src="" class="card-img-top w-100" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn btn-primary btn-detail" data-bs-toggle="modal"
+                        data-bs-target="#detail-modal">
+                        詳細
+                    </button><button type="button" class="btn btn-danger ms-2 btn-video" data-bs-toggle="modal"
+                        data-bs-target="#video-modal">
+                        影片
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+
+    <div class="modal fade detail-modal" id="detail-modal" tabindex="-1" aria-labelledby="LoLChampionDetailModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="img-box p-3">
+                        <img src="" class="img-champion w-100" alt="img-champion">
+                    </div>
+                    <ul class="champion-ability">
+
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade video-modal" id="video-modal" tabindex="-1" aria-labelledby="LoLChampionVideoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        // 宣告
+
+        const url = 'https://ddragon.leagueoflegends.com/cdn/10.22.1/data/zh_TW/champion.json';
+
+        // let nameArray = [];
+        // let championsObject = {};
+        // let heroArray = [];
+        // let championsArray = []
+
+
+
+        // DOM
+
+        const templateCard = document.querySelector('#template-card')
+        const championGroup = document.querySelector('.champion-group')
+        const detailModal = document.querySelector('.detail-modal')
+        // const championAbility = document.querySelector('.champion-ability')
+
+
+        // window.onload
+
+
+
+
+
+        window.onload = function () {
+
+            fetch(url)
+                .then(response => response.json())
+                .then(result => {
+                    championsArray = Object.values(result.data);
+                    // console.log(championsObject)
+                    setTemplateNode(championsArray); //迭代 & 物件轉換成陣列
+
+
+                    // document.querySelector('#championsCarousel').style.visibility = 'visible';
+                })
+                .catch()
+                .finally()
+
+
+
+        }
+
+
+
+        // function
+
+
+
+
+        function setTemplateNode(championsArray) {
+
+            championsArray.forEach((champion, index) => {
+                const templateCardNode = templateCard.content.cloneNode(true)
+
+
+
+                // console.log(templateCardNode)
+                console.log(champion)
+                templateCardNode.querySelector('.card-img-top').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`
+                templateCardNode.querySelector('.card-title').innerText = `${index}：${champion.id} - ${champion.name}`
+                templateCardNode.querySelector('.card-text').innerText = `${champion.blurb.substring(0, 50)}...`
+                templateCardNode.querySelector('.btn-detail').onclick = function () {
+                    showModal(champion)
+                }
+
+
+
+
+
+                championGroup.appendChild(templateCardNode)
+            })
+
+
+
+
+            // nameArray = Object.keys(championsObject);
+
+            // nameArray.forEach((name, index) => {
+            //     console.log(`${index}. ${championsObject[name].id}, ${championsObject[name].name}, 
+            //         ${championsObject[name].blurb.substring(0, 25)}...`);
+
+            //     heroArray.push({
+            //         id: championsObject[name].id, name: championsObject[name].name,
+            //         blurb: championsObject[name].blurb
+            //     });
+            // });
+
+            // console.log(heroArray);
+        }
+
+
+
+        // function
+        function showModal(champion) {
+            detailModal.querySelector('.modal-title').innerText = `${champion.id} - ${champion.name}`
+            detailModal.querySelector('.img-champion').src = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion.id}_0.jpg`
+            // let championAbilityArray = [...detailModal.querySelector('.champion-ability').children]
+            // championAbilityArray.forEach(((li,index)=>{
+            // }))
+
+            detailModal.querySelector('.champion-ability').innerHTML = `
+                        <li>HP : ${champion.stats.hp}</li>
+                        <li>Move Speed : ${champion.stats.movespeed}</li>
+                        <li>Armor : ${champion.stats.armor}</li>
+                        <li>Spell Block : ${champion.stats.spellblock}</li>
+                        <li>AttackRange : ${champion.stats.attackrange}</li>`
+        }
+
+
+    </script>
+
+</body>
+
+</html>
