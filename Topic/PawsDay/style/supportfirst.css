@@ -1,0 +1,62 @@
+.common-problem-container .search-area {
+  margin-bottom: 50px;
+  height: 210px;
+}
+.common-problem-container .search-area .slogan {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.common-problem-container .search-area .search-input {
+  border: 0px;
+}
+.common-problem-container .search-area .search-btn {
+  width: 60px;
+  color: white;
+  background-color: var(--clr-primary);
+  border: 0px;
+}
+.common-problem-container .search-area .hot-search {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.common-problem-container .search-area .hot-search-link {
+  text-decoration: none;
+}
+.common-problem-container .help-container .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 33px;
+  color: var(--clr-font);
+}
+.common-problem-container .help-container .icon {
+  width: 50px;
+  margin: 20px 15px;
+}
+.common-problem-container .help-container .text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 10px;
+}
+.common-problem-container .help-container .list-group-item {
+  border-color: var(--clr-border);
+}
+.common-problem-container .help-container .list-group-item:hover {
+  background-color: transparent;
+  box-shadow: 0 0 0 0.05rem var(--clr-border);
+}
+
+@media screen and (min-width: 768px) {
+  .common-problem-container .search-container .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .common-problem-container .search-area {
+    height: 255px;
+  }
+  .common-problem-container .slogan {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}/*# sourceMappingURL=supportfirst.css.map */

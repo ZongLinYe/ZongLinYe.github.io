@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.consumer-container .title-container {
+  height: 110px;
+  margin-bottom: 40px;
+}
+.consumer-container .title-container .slogan {
+  font-weight: 500;
+}
+.consumer-container .help-container .title {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.391);
+}
+.consumer-container .help-container .item-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+.consumer-container .help-container .item-link::before {
+  content: "🐾";
+  position: relative;
+  right: 10px;
+}
+.consumer-container .help-container .content-list {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=supportsecond.css.map */

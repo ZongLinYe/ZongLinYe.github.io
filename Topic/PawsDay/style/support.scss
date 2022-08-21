@@ -1,0 +1,40 @@
+.full-width {
+}
+
+.problem-header {
+    text-align: center;
+    .logo {
+        height: 60px;
+    }
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.problem-container {
+    background-color: var(--clr-bg-y);
+
+    .slogan {
+        color: var(--clr-specfont);
+        font-size: 22px;
+        line-height: 41px;
+        letter-spacing: 3px;
+    }
+}
+
+.container-all {
+    .breadcrumb {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .breadcrumb-link {
+        color: var(--clr-border);
+        text-decoration: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .problem-header {
+        text-align: left;
+    }
+}

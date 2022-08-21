@@ -1,0 +1,25 @@
+.answer-container .breadcrumb {
+  margin: 0 5px 5px 5px;
+}
+
+.answer-area {
+  border: 1px solid rgba(169, 169, 169, 0.388);
+  margin: 0 5px 5px 5px;
+  padding: 50px 20px 50px 20px;
+}
+.answer-area .title {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 30px;
+}
+.answer-area .text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 2.5;
+}
+.answer-area .question {
+  color: var(--clr-border);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2;
+}/*# sourceMappingURL=supportthird.css.map */

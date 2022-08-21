@@ -10,8 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/3807b66583.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style/pawsday.css">
 
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/support.css">
+    <link rel="stylesheet" href="../style/supportfirst.css">
 
 </head>
 
@@ -20,43 +23,76 @@
 
 
 
-    <header class="common-problem-header">
-        <div class="logo">
-            <a href="./home.html">
-                <img src="https://picsum.photos/500/200/?random=10">
-            </a>
+
+    <header class="header-container">
+        <div class="container problem-header consumer-header">
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="../pic/logo.png">
+                </a>
+            </div>
         </div>
     </header>
 
-    <div class="container-fluid common-problem-container">
-        <div class="row search-area">
-            <div class="col d-flex text-center align-items-center">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
 
-                            <div class="slogan">你今天需要什麼幫助呢？</div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control search-input" placeholder="輸入搜尋字詞"
-                                    aria-label="輸入搜尋字詞" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
+
+
+
+    <div class="text-center container-all common-problem-container">
+        <div class="problem-container search-container">
+            <div class="container">
+                <div class="row d-flex align-items-center main-area search-area">
+                    <div class="col">
+                        <h2 class="slogan">你今天需要什麼幫助呢？</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control search-input" placeholder="輸入搜尋字詞"
+                                aria-label="輸入搜尋字詞" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="text-start hot-search">熱門搜尋: <a href="#" class="hot-search-link">註冊</a>、<a href="#"
+                                class="hot-search-link">保母</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+
+
+        <div class="help-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="title mb-4">幫助主題</h3>
+                        <div class="list-group row gy-3 text-start d-flex flex-wrap flex-row">
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <a href="./consumerproblem.html"
+                                    class="list-group-item list-group-item-action d-flex align-items-center rounded ">
+                                    <img class="icon" src="../pic/consumer.png" alt="">
+                                    <span class="text">消費者常見說明</span>
+                                </a>
                             </div>
 
+                            <div class="col-12 col-md-6  col-xl-4"> <a href="./babysitterproblem.html"
+                                    class="list-group-item list-group-item-action d-flex align-items-center rounded">
+                                    <img class=" icon" src="../pic/problem.png" alt="">
+                                    <span class="text">保母常見說明</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6  col-xl-4"> <a href="./invoiceproblem.html"
+                                    class="list-group-item list-group-item-action d-flex align-items-center rounded ">
+                                    <img class="icon" src="../pic/Invoice.png" alt="">
+                                    <span class="text">發票常見說明</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-        <div class="row pro">
-            <div class="col"></div>
-        </div>
-
     </div>
 
 
