@@ -359,6 +359,46 @@ button:focus,
 
 /*----手機板結束-----------------------------------------------------------------------------------------------------*/
 
+/*-----common-problem Home 開始----------------------------------------------------------------------------------------------------*/
+
+.common-problem-header {
+    .logo {
+        height: 60px;
+    }
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+.common-problem-container {
+    .search-area {
+        height: 210px;
+        background-color: var(--clr-bg-y);
+    }
+    .slogan {
+        color: var(--clr-specfont);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+    .search-input {
+        border: 0px;
+    }
+
+    .search-btn {
+        width: 60px;
+        color: white;
+        background-color: var(--clr-primary);
+        border: 0px;
+        // background-color: ;
+    }
+}
+
+/*-----common-problem Home 結束----------------------------------------------------------------------------------------------------*/
+
 @media screen and (min-width: 768px) {
     .col-md-1 {
         width: 8.3333%;
@@ -406,6 +446,16 @@ button:focus,
 
     .col-md-12 {
         width: 100%;
+    }
+
+    /*---------------common-problem 開始---------------------------------------------------------*/
+
+    .common-problem-container {
+        .search-area {
+            .container {
+                max-width: 768px;
+            }
+        }
     }
 }
 
@@ -456,6 +506,17 @@ button:focus,
 
     .col-lg-12 {
         width: 100%;
+    }
+    /*---------------common-problem 開始---------------------------------------------------------*/
+
+    .common-problem-container {
+        .search-area {
+            height: 255px;
+        }
+        .slogan {
+            font-size: 28px;
+            line-height: 44px;
+        }
     }
 }
 
