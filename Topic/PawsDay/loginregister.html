@@ -23,11 +23,19 @@
 
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-register">
-        login-register demo modal
+        login-register demo modal for phone
     </button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-ok">
-        login-ok demo modal
+        login-ok demo modal for phone
     </button>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-register-desktop">
+        login-register demo modal for desktop
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login-ok-desktop">
+        login-ok demo modal for desktop
+    </button>
+
 
     <!-- Modal login-register -->
     <div class="modal fade login-register-forgot" id="login-register" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -423,6 +431,415 @@
         </div>
     </div>
 
+
+    <!-- ----桌面----------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal login-register -->
+    <div class="modal fade login-register-forgot" id="login-register-desktop" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- JS 大於 992px remove modal-fullscreen ----------------------------------------------------------------------------------------- -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container text-center login-register">
+
+                        <div class="row">
+                            <!-- JS 大於 992px replace text-start -> text-end ------------------------------------------------------------------------->
+                            <div class="col p-3 text-start">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="title mb-1 mb-lg-3">登入註冊 PawsDay</div>
+                                <div class="subtitle mb-4 mb-lg-5">立即登入，隨時收到獨家優惠</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-grid gap-3 list-group px-4 mb-4">
+
+
+
+                                    <a href="https://www.facebook.com/ "
+                                        class="list-group-item rounded-pill d-flex justify-content-center position-relative login-url">
+                                        <i class="fa-brands fa-facebook fs-4 px-2 position-absolute icon"></i>使用
+                                        Facebook 繼續
+                                    </a>
+
+                                    <a href="https://www.google.com.tw/"
+                                        class="list-group-item rounded-pill d-flex justify-content-center position-relative login-url">
+                                        <div class="px-2 position-absolute icon google">
+                                            <svg height="20px" width="20px" viewBox="0 0 533.5 544.3"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M533.5 278.4c0-18.5-1.5-37.1-4.7-55.3H272.1v104.8h147c-6.1 33.8-25.7 63.7-54.4 82.7v68h87.7c51.5-47.4 81.1-117.4 81.1-200.2z"
+                                                    fill="#4285f4" />
+                                                <path
+                                                    d="M272.1 544.3c73.4 0 135.3-24.1 180.4-65.7l-87.7-68c-24.4 16.6-55.9 26-92.6 26-71 0-131.2-47.9-152.8-112.3H28.9v70.1c46.2 91.9 140.3 149.9 243.2 149.9z"
+                                                    fill="#34a853" />
+                                                <path
+                                                    d="M119.3 324.3c-11.4-33.8-11.4-70.4 0-104.2V150H28.9c-38.6 76.9-38.6 167.5 0 244.4l90.4-70.1z"
+                                                    fill="#fbbc04" />
+                                                <path
+                                                    d="M272.1 107.7c38.8-.6 76.3 14 104.4 40.8l77.7-77.7C405 24.6 339.7-.8 272.1 0 169.2 0 75.1 58 28.9 150l90.4 70.1c21.5-64.5 81.8-112.4 152.8-112.4z"
+                                                    fill="#ea4335" />
+                                            </svg>
+                                        </div>使用
+                                        Google
+                                        繼續
+                                    </a>
+
+                                    <a href="https://creator.line.me/signup/line_auth"
+                                        class="list-group-item rounded-pill d-flex justify-content-center position-relative login-url">
+                                        <i class="fa-brands fa-line fs-4 px-2 position-absolute icon"></i>使用
+                                        LINE
+                                        繼續
+                                    </a>
+
+                                    <a href="https://www.facebook.com/"
+                                        class="list-group-item rounded-pill d-flex justify-content-center position-relative login-url"
+                                        data-bs-toggle="modal" data-bs-target="#login-desktop">
+                                        <i class="fa-regular fa-envelope fs-4 px-2 position-absolute icon login"></i>使用
+                                        電子郵件 繼續
+                                    </a>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal email-->
+    <div class="modal fade login-register-forgot" id="login-desktop" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- JS 大於 992px remove modal-fullscreen ----------------------------------------------------------------------------------------- -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container text-center login">
+
+                        <div class="row">
+                            <div class="col text-start border-bottom">
+                                <button type="button" class="btn btn-link py-2 back" data-bs-dismiss="modal"
+                                    aria-label="back" data-bs-toggle="modal" data-bs-target="#login-register-desktop">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="title pt-4 mb-1 mb-lg-3">登入 PawsDay</div>
+                                <!-- <div class="subtitle mb-4 mb-lg-5">立即登入，隨時收到獨家優惠</div> -->
+                                <div class="subtitle mb-4 mb-lg-5">PawsDay 會員帳號登入</div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col content">
+                                <div class="d-grid gap-1 mx-2">
+
+                                    <div class="input-group  mb-2">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control input-email" placeholder="電子郵件"
+                                            aria-label="email" aria-describedby="basic-addon1">
+                                    </div>
+                                    <!-- <div class="text-danger error-information email-required"> 請輸入 Email ! </div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </span>
+                                        <input type="password" class="form-control input-password" placeholder="密碼"
+                                            aria-label="password" aria-describedby="basic-addon1">
+                                    </div>
+
+
+                                    <div class="text-end"> <a href="" class="text-decoration-none forgot-password-url"
+                                            data-bs-toggle="modal" data-bs-target="#forgot-desktop">忘記密碼</a>
+                                    </div>
+                                    <div class="text-start notice mb-2">
+                                        This site is protected by reCAPTCHA and the Google <a href=""
+                                            class="text-decoration-none notice-url">Privacy Policy</a> and <a href=""
+                                            class="text-decoration-none notice-url">Terms of Service</a> apply
+                                    </div>
+
+                                    <div class="list-group mb-1">
+                                        <a href="" class="list-group-item login-btn main-btn">
+                                            登入
+                                        </a>
+                                    </div>
+                                    <div class="mb-4">
+                                        <a href="" class="p-1 text-decoration-none register-btn other-btn"
+                                            data-bs-toggle="modal" data-bs-target="#register-desktop">註冊</a>
+                                    </div>
+                                    <!-- <div>還未加入 PawsDay 嗎 ? 立即註冊 !</div> -->
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------------ -->
+
+
+
+
+    <!-- Modal register -->
+    <div class="modal fade login-register-forgot" id="register-desktop" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- JS 大於 992px remove modal-fullscreen ----------------------------------------------------------------------------------------- -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container text-center register">
+
+                        <div class="row">
+
+                            <div class="col text-start border-bottom">
+                                <button type="button" class="btn btn-link py-2 back" data-bs-dismiss="modal"
+                                    aria-label="back" data-bs-toggle="modal" data-bs-target="#login-desktop">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="title pt-4 mb-1 mb-lg-3">免費註冊</div>
+                                <!-- <div class="subtitle mb-4 mb-lg-5">立即登入，隨時收到獨家優惠</div> -->
+                                <div class="subtitle mb-4 mb-lg-5">免費註冊 PawsDay 會員帳號</div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col content">
+                                <div class="d-grid gap-1 mx-2">
+
+                                    <div class="input-group  mb-2">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control" placeholder="電子郵件" aria-label="email"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <!-- <div class="text-danger error-information email-required"> 請輸入 Email ! </div> -->
+                                    <!-- <div class="text-danger error-information field-required">此欄位必填</div> -->
+                                    <div class="input-group mb-2">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </span>
+                                        <input type="password" class="form-control" placeholder="密碼"
+                                            aria-label="password" aria-describedby="basic-addon1">
+                                    </div>
+                                    <!-- <div class="text-danger error-information field-required">此欄位必填</div> -->
+
+
+                                    <!-- <div class="text-end"> <a href=""
+                                     class="text-decoration-none forgot-password-url">忘記密碼</a>
+                             </div> -->
+
+                                    <div class="text-start notice mb-2 terms-of-use"><input type="checkbox"
+                                            class="me-2 terms-of-use-checkd">我以詳閱並同意 <a href=""
+                                            class="text-decoration-none notice-url">使用者條款</a> & <a href=""
+                                            class="text-decoration-none notice-url">隱私權保護政策</a> <span
+                                            class="text-danger">*</span></div>
+                                    <div class="text-start notice mb-2">
+                                        This site is protected by reCAPTCHA and the Google <a href=""
+                                            class="text-decoration-none notice-url">Privacy
+                                            Policy</a> and <a href="" class="text-decoration-none notice-url">Terms of
+                                            Service</a> apply
+                                    </div>
+
+
+
+                                    <div class="list-group mb-1">
+                                        <a href="" class="list-group-item register-btn main-btn">
+                                            註冊
+                                        </a>
+                                        <!-- <div>還未加入 PawsDay 嗎 ? 立即註冊 !</div> -->
+                                    </div>
+                                    <div class="mb-4"><span class="other-btn">已經有帳號了 ?</span>
+                                        <a href="" class="p-1 text-decoration-none mb-4 login-btn other-btn"
+                                            data-bs-toggle="modal" data-bs-target="#login-desktop">登入</a>
+                                        <!-- <div>已經成為會員，立即加入</div> -->
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------- -->
+
+    <!-- Modal forgot -->
+    <div class="modal fade login-register-forgot" id="forgot-desktop" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- JS 大於 992px remove modal-fullscreen ----------------------------------------------------------------------------------------- -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container text-center forgot">
+
+                        <div class="row">
+
+                            <div class="col text-start border-bottom">
+                                <button type="button" class="btn btn-link py-2 back" data-bs-dismiss="modal"
+                                    aria-label="back" data-bs-toggle="modal" data-bs-target="#login-desktop">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="title pt-4 mb-1 mb-lg-3">忘記密碼</div>
+                                <!-- <div class="subtitle mb-4 mb-lg-5">立即登入，隨時收到獨家優惠</div> -->
+                                <div class="subtitle mb-4 mb-lg-5">請輸入 Email，我們會把重置方式寄到您的信箱。</div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col content">
+                                <div class="d-grid gap-1 mx-2">
+
+                                    <div class="input-group  mb-2">
+                                        <span class="input-group-text" id="basic-addon1">
+                                            <i class="fa-regular fa-envelope"></i>
+                                        </span>
+                                        <input type="email" class="form-control" placeholder="電子郵件" aria-label="email"
+                                            aria-describedby="basic-addon1">
+                                    </div>
+                                    <!-- <div class="text-danger error-information email-required"> 請輸入 Email ! </div> -->
+                                    <!-- <div class="text-danger error-information field-required">此欄位必填</div> -->
+
+                                    <div class="list-group mb-1">
+                                        <a href="" class="list-group-item mb-4 main-btn reset-password">
+                                            重置密碼
+                                        </a>
+
+                                    </div>
+
+                                    <!-- <div class="text-danger error-information field-required">此欄位必填</div> -->
+                                    <!-- <div>還未加入 PawsDay 嗎？ 立即註冊！</div> -->
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- Modal login-ok -->
+    <div class="modal fade login-register-forgot" id="login-ok-desktop" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- JS 大於 992px remove modal-fullscreen ----------------------------------------------------------------------------------------- -->
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="container text-center login-ok">
+
+                        <div class="row">
+                            <div class="col p-3 text-start">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="title mb-1 mb-lg-3">歡迎回來 PawsDay</div>
+                                <div class="subtitle mb-4 mb-lg-4">立即登入，隨時收到獨家優惠</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 m-auto head-shot">
+                            <img src="https://picsum.photos/100/100/?random=10" class="head-shot-pic">
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-grid gap-3 list-group px-4 mb-4">
+                                    <div class="list-group">
+                                        <a href="https://www.facebook.com/ "
+                                            class="list-group-item rounded-pill d-flex justify-content-center position-relative login-url">
+                                            <i class="fa-brands fa-facebook fs-4 px-2 position-absolute icon"></i>使用
+                                            Facebook 繼續
+                                        </a>
+                                    </div>
+
+                                    <div class="">
+                                        <a href="" class="p-1 text-decoration-none mb-4 text-dark other-btn  switch-btn"
+                                            data-bs-toggle="modal" data-bs-target="#login-register-desktop">切換帳號</a>
+                                        <!-- <div>已經成為會員，立即加入</div> -->
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 

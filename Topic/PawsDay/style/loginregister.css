@@ -104,7 +104,7 @@
     font-size: 18px;
     letter-spacing: 2px;
   }
-  .login-register-forgot .modal-body {
+  .login-register-forgot .modal-content {
     border-top: 5px solid var(--clr-border);
   }
   .login-register-forgot .content {
